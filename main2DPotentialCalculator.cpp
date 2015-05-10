@@ -1,4 +1,5 @@
 #include <iostream>
+#include "displayArray.cpp"
 
 //Define constants
 //number of ierations of the potential calculation
@@ -7,7 +8,7 @@
 int main() {
     
     //Define constants
-    const int iterations = 10;//number of ierations of the potential calculation
+    const int iterations = 10000;//number of ierations of the potential calculation
     const int height = 10, width = 10;//dimensions of the array
 
     
@@ -36,16 +37,10 @@ int main() {
     
 
     
-   /*
-// For testing, print the array calculated
- 
-    for (int i = 0 ; i < height ; i++ ){
-        for (int j = 0 ; j < width ; j++){
-            std::cout << grid[i][j] << std::endl;
 
-        }
-    }
-*/
+     // For testing, print the array calculated
+     displayArray(grid);
+
 
     
     
@@ -84,22 +79,13 @@ for ( int c = 0; c < iterations ; c++ ){ // May replace with a while loop later 
     
     
     
-/*
     // For testing, print the array calculated
+    displayArray(grid);
     
-    for (int i = 0 ; i < height ; i++ ){
-        for (int j = 0 ; j < width ; j++){
-            std::cout << grid[i][j] << std::endl;
-            
-        }
-    }
-    
-
     
     
     return 0; //end main func
 }
-*/
 
 
 
