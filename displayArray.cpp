@@ -1,17 +1,14 @@
 #include <iostream>
 
-const int N = 10, M = 10; // Initialise the dimensions of the array
-                          // N is height M is width
-
-void displayArray( double n[N][M] ) {
+void displayArray( double ** array, unsigned heigth, unsigned width ) { // taking array pointing to pointers pointing to double and dimesions
     
-    for( int i = 0 ;  i < N ; ++ i ) {
+    for( int i = 0 ;  i < heigth ; ++ i ) {
         
         std::cout << std::endl; // Break line for every new row
         
-        for( int j = 0 ; j < M ; ++j ) {
+        for( int j = 0 ; j < width ; ++j ) {
             
-            std:: cout << n[i][j] << " " ; // Display the cell values for a row seperated by spaces
+            std:: cout << array[i][j] << " " ; // Display the cell values for a row seperated by spaces
             
         }
     }
