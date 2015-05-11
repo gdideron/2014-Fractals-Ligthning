@@ -18,7 +18,7 @@
 
 
 // The function itself needs the original array on which to compute the laplacian, its dimensions and the max error required
-double ** solveArray( double ** array, unsigned height, unsigned width, double error // will pass to finction checking convergence ) {
+double ** solveArray( double ** array, unsigned height, unsigned width, double error ) { // will pass to finction checking convergence ) {
     
     
     
