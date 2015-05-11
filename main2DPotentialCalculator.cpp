@@ -2,6 +2,7 @@
 #include "displayArray.cpp"
 #include "createArray.cpp"
 #include "solveArray.cpp"
+#include "writeArray.cpp"
 
 // Main programme, contains main function
 
@@ -35,6 +36,9 @@ int main() {
     
     // For testing, print the array calculated
     displayArray(newGrid, height, width);
+    
+    // Write result array into a text file
+    writeArray(newGrid, height, width);
     
     
     return 0; //end main func
