@@ -12,13 +12,14 @@ void writeArray( double ** array, unsigned height, unsigned width ) {
     
     for( int i = 0 ;  i < height ; ++ i ) { // sweeping through the whole array vertically
         
-        fout << std::endl; // Break line for every new row
-        
         for( int j = 0 ; j < width ; ++j ) { // sweeping through the whole array horizontally
             
-            fout << array[i][j] << ", " ; // Display the cell values for a row seperated by spaces and commas
+            fout << array[i][j] << " " ; // Display the cell values for a row seperated by spaces and commas
             
         }
+        
+        fout << std::endl; // Break line for every new row
+        
     }
 
     fout.close(); //closes file
