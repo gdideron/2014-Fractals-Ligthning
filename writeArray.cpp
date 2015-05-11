@@ -7,8 +7,8 @@ using namespace std;
 
 void writeArray( double ** array, unsigned height, unsigned width ) {
     
-    const char *path="/Users/dideronguillaume/Desktop/2015-Fractals-Lightning/gridArray.txt"; // create file to write in
-    ofstream fout(path) ; // call on file as output
+    const char *path="/Users/gridArray.txt"; // create file to write in
+    ofstream fout("gridArray.txt") ; // call on file as output
     
     for( int i = 0 ;  i < height ; ++ i ) { // sweeping through the whole array vertically
         
