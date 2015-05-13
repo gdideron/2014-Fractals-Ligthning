@@ -10,7 +10,7 @@ void writeArray( double ** array, unsigned height, unsigned width ) {
     const char *path="/Users/gridArray.txt"; // create file to write in
     ofstream fout("gridArray.txt") ; // call on file as output
     
-    for( int i = height - 1 ;  i >= 0 ; ++ i ) { // sweeping through the whole array vertically
+    for( int i = 0 ;  i < height ; ++ i ) { // sweeping through the whole array vertically
         
         for( int j = 0 ; j < width ; ++j ) { // sweeping through the whole array horizontally
             

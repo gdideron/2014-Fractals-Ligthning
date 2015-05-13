@@ -13,10 +13,12 @@ double ** createArray( unsigned height, unsigned width ) { // function returns a
         for ( int j = 0 ; j < width ; j++ ) {
             
             // Set condition if it is the bottom line
-            if ( i == 0 )  array [i][j] = 1;// Then make the point equal to 1
+            if ( i == 0 )  array [i][j] = 0;// Then make the point equal to 1
+            
+            else if ( i == height - 1 ) array [i][j] = 1;
             
             // Otherwise set point to 0
-            else array [i][j] = 0;
+            else array [i][j] = i / ( double(height) - 1 ) ;
             
         }
         
@@ -28,15 +30,14 @@ double ** createArray( unsigned height, unsigned width ) { // function returns a
 
 
 //display the output for testing (include display in header)
-/*
 
+/*
 int main() {
     
-    double ** grid = createArray(10, 10);
-    displayArray(grid, 10 ,10);
+    double ** grid = createArray(100, 100);
+    displayArray(grid, 100 ,100);
     
     return 0;
 }
-
 
 */
