@@ -9,7 +9,6 @@ with open('gridArray.txt') as data_file:
 A = numpy.asarray(display_list)
 A = A.astype(float)
 
-A[0:]=A[::-1]
 plt.imshow(A)
 plt.colorbar()
 plt.show()
