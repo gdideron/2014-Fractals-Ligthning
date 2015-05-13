@@ -2,7 +2,7 @@
 
 void displayArray( double ** array, unsigned height, unsigned width ) { // taking array pointing to pointers pointing to double and dimesions
     
-    for( int i = 0 ;  i < height ; ++ i ) { // sweeping through the whole array vertically
+    for( int i = height - 1 ;  i >= 0 ; -- i ) { // sweeping through the whole array vertically
         
         std::cout << std::endl; // Break line for every new row
         
